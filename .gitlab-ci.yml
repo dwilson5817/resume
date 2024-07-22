@@ -18,7 +18,7 @@ build:
     - cat main.log
   artifacts:
     paths:
-      - main.pdf
+      - resume/out/main.pdf
 
 include:
   - template: Security/SAST.gitlab-ci.yml
