@@ -8,7 +8,7 @@ export class ResumeStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    const bucket = new s3.Bucket(scope, 'ResumeBucket', {
+    const bucket = new s3.Bucket(this, 'ResumeBucket', {
       removalPolicy: cdk.RemovalPolicy.RETAIN,
     });
 
