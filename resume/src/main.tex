@@ -1,0 +1,47 @@
+%! Author = dylan
+%! Date = 02/02/2023
+
+% Preamble
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage[a4paper, margin=1cm]{geometry}
+\usepackage[parfill]{parskip}
+\usepackage{paratype}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array, booktabs}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{stmaryrd}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\setlist[itemize]{leftmargin=*,labelsep=2.5mm,noitemsep}
+\newcommand{\foo}{\makebox[1pt]{\raisebox{0.5pt}{\large$\bullet$}}\hskip-1pt\vrule width 1pt\hspace{\labelsep}}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\pagenumbering{gobble}
+
+% Document
+\begin{document}
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} @{}lcr@{} }
+        Dublin, Ireland & \multirow{2}{*}{\Huge\textbf{Dylan Wilson}} & mail@dylanwilson.dev \\
+        (+44) 7484 815817 & & gitlab.dylanw.dev
+    \end{tabular*}
+
+    \bigskip
+
+    \input{01-education}
+
+    \bigskip
+    
+    \input{02-experience}
+
+    \bigskip
+    
+    \input{03-projects}
+    
+\end{document}
