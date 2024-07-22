@@ -10,8 +10,10 @@ build:
   image: texlive/texlive:latest
   stage: build
   script:
-    - cd resume/
-    - pdflatex -file-line-error -interaction=nonstopmode -synctex=1 -output-format=pdf src/main.tex
+    - cd resume
+    - mkdir out
+    - cd src
+    - pdflatex -file-line-error -interaction=nonstopmode -synctex=1 -output-format=pdf -output-dir=../out main.tex
   after_script:
     - cat main.log
   artifacts:

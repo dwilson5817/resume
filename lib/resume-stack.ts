@@ -13,7 +13,7 @@ export class ResumeStack extends cdk.Stack {
     });
 
     new s3deploy.BucketDeployment(this, 'DeployResume', {
-      sources: [ s3deploy.Source.asset(path.join(__dirname, 'resume')) ],
+      sources: [ s3deploy.Source.asset(path.join(__dirname, 'resume/out')) ],
       destinationBucket: bucket,
     });
 
