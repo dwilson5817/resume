@@ -1,16 +1,25 @@
 import * as cdk from 'aws-cdk-lib';
+import * as s3 from 'aws-cdk-lib/aws-s3';
+import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment';
 import { Construct } from 'constructs';
-// import * as sqs from 'aws-cdk-lib/aws-sqs';
+import * as path from 'node:path';
 
 export class ResumeStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    // The code that defines your stack goes here
+    const bucket = new s3.Bucket(scope, 'ResumeBucket', {
+      removalPolicy: cdk.RemovalPolicy.RETAIN,
+    });
 
-    // example resource
-    // const queue = new sqs.Queue(this, 'ResumeQueue', {
-    //   visibilityTimeout: cdk.Duration.seconds(300)
-    // });
+    new s3deploy.BucketDeployment(this, 'DeployResume', {
+      sources: [ s3deploy.Source.asset(path.join(__dirname, 'resume')) ],
+      destinationBucket: bucket,
+    });
+
+    new cdk.CfnOutput(this, 'ec2RoleArn', {
+      value: bucket.bucketArn,
+      exportName: 'ResumeBucket',
+    });
   }
 }
