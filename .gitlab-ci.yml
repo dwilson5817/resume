@@ -1,9 +1,20 @@
 stages:
   - test
+  - build
   - deploy
 
 sast:
   stage: test
+
+build:
+  image: texlive/texlive:latest
+  script:
+    - pdflatex -file-line-error -interaction=nonstopmode -synctex=1 -output-format=pdf main.tex
+  after_script:
+    - cat main.log
+  artifacts:
+    paths:
+      - main.pdf
 
 include:
   - template: Security/SAST.gitlab-ci.yml
