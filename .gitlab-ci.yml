@@ -11,7 +11,7 @@ build:
   stage: build
   script:
     - cd resume/
-    - pdflatex -file-line-error -interaction=nonstopmode -synctex=1 -output-format=pdf main.tex
+    - pdflatex -file-line-error -interaction=nonstopmode -synctex=1 -output-format=pdf src/main.tex
   after_script:
     - cat main.log
   artifacts:
