@@ -17,7 +17,7 @@ export class ResumeStack extends cdk.Stack {
       destinationBucket: bucket,
     });
 
-    new cdk.CfnOutput(this, 'ec2RoleArn', {
+    new cdk.CfnOutput(this, 'ResumeBucket', {
       value: bucket.bucketArn,
       exportName: 'ResumeBucket',
     });
