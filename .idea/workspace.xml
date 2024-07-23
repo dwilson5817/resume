@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f08e643f-ec72-4f96-8118-0e0a3b717261" name="Changes" comment="fix(cdk): update build artifact source&#10;&#10;Update the location of the build artifacts.  Because the &#10;`resume-stack.ts` file is in `lib/` we need to go up one level.K">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f08e643f-ec72-4f96-8118-0e0a3b717261" name="Changes" comment="chore(phpstorm): update workspace configuration&#10;&#10;Commit changes to workspace configuration.">
       <change beforePath="$PROJECT_DIR$/lib/resume-stack.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/resume-stack.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,8 +59,8 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.32994187" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.32994187" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.32994187" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.32994187" />
       <window_info anchor="bottom" id="Services" order="5" weight="0.32994187" />
       <window_info anchor="right" id="Detexify" show_stripe_button="false" />
       <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
@@ -125,7 +124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1721684889161</updated>
       <workItem from="1721684890943" duration="4016000" />
-      <workItem from="1721760519299" duration="2395000" />
+      <workItem from="1721760519299" duration="2636000" />
     </task>
     <task id="LOCAL-00001" summary="chore(create-project): create project in IntelliJ IDEA&#10;&#10;Add JetBrains related configuration to the repository.">
       <option name="closed" value="true" />
@@ -215,7 +214,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721688118535</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix(cdk): update resume bucket stack export name&#10;&#10;Change export name to `ResumeBucket`.">
+      <option name="closed" value="true" />
+      <created>1721765272407</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1721765272407</updated>
+    </task>
+    <task id="LOCAL-00013" summary="chore(phpstorm): update workspace configuration&#10;&#10;Commit changes to workspace configuration.">
+      <option name="closed" value="true" />
+      <created>1721765328212</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1721765328212</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +250,9 @@
     <MESSAGE value="ci(build): update PDF artifact path&#10;&#10;Update the artifact path to ensure artifacts are uploaded." />
     <MESSAGE value="fix(cdk): `ResumeBucket` should be created in the scope of a Stack&#10;&#10;Fix error &quot;Bucket at 'ResumeBucket' should be created in the scope of a &#10;Stack, but no Stack found&quot;.  Use `this` instead of the `stack` variable." />
     <MESSAGE value="fix(cdk): update build artifact source&#10;&#10;Update the location of the build artifacts.  Because the &#10;`resume-stack.ts` file is in `lib/` we need to go up one level." />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(cdk): update build artifact source&#10;&#10;Update the location of the build artifacts.  Because the &#10;`resume-stack.ts` file is in `lib/` we need to go up one level." />
+    <MESSAGE value="fix(cdk): update resume bucket stack export name&#10;&#10;Change export name to `ResumeBucket`." />
+    <MESSAGE value="chore(phpstorm): update workspace configuration&#10;&#10;Commit changes to workspace configuration." />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(phpstorm): update workspace configuration&#10;&#10;Commit changes to workspace configuration." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
