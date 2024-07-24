@@ -6,9 +6,9 @@ build:
   stage: build
   script:
     - cd src
-    - pdflatex -file-line-error -interaction=nonstopmode -synctex=1 -output-format=pdf -output-dir=../out main.tex
+    - pdflatex -file-line-error -interaction=nonstopmode -synctex=1 -output-format=pdf -output-dir=../ main.tex
   after_script:
     - cat out/main.log
   artifacts:
     paths:
-      - out/main.pdf
+      - main.pdf
