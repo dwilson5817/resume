@@ -1,23 +1,14 @@
 stages:
-  - test
   - build
-  - deploy
-
-sast:
-  stage: test
 
 build:
   image: texlive/texlive:latest
   stage: build
   script:
     - cd src
-    - pdflatex -file-line-error -interaction=nonstopmode -synctex=1 -output-format=pdf -output-dir=out main.tex
+    - pdflatex -file-line-error -interaction=nonstopmode -synctex=1 -output-format=pdf -output-dir=../out main.tex
   after_script:
-    - cat main.log
+    - cat out/main.log
   artifacts:
     paths:
       - out/main.pdf
-
-include:
-  - template: Security/SAST.gitlab-ci.yml
-  - component: gitlab.dylanw.dev/infrastructure/cdk-deployment-base/js-cdk-deploy@v1.0
