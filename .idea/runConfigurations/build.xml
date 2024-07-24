@@ -9,8 +9,8 @@
       <compiler-arguments />
       <envs />
       <before-run-command />
-      <main-file>$PROJECT_DIR$/resume/src/main.tex</main-file>
-      <output-path>$PROJECT_DIR$/resume/out</output-path>
+      <main-file>$PROJECT_DIR$/src/main.tex</main-file>
+      <output-path>$PROJECT_DIR$/out</output-path>
       <auxil-path>{projectDir}/auxil</auxil-path>
       <compile-twice>false</compile-twice>
       <output-format>PDF</output-format>

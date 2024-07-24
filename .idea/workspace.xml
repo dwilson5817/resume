@@ -4,8 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f08e643f-ec72-4f96-8118-0e0a3b717261" name="Changes" comment="chore(phpstorm): update workspace configuration&#10;&#10;Commit changes to workspace configuration.">
-      <change beforePath="$PROJECT_DIR$/lib/resume-stack.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/resume-stack.ts" afterDir="false" />
+    <list default="true" id="f08e643f-ec72-4f96-8118-0e0a3b717261" name="Changes" comment="fix(cdk): update resume bucket stack export name&#10;&#10;Change export name to `ResumeBucketARN`.">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/resume.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cdk.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/resume-stack.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resume/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resume/src/01-education.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/01-education.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resume/src/02-experience.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/02-experience.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resume/src/03-projects.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/03-projects.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resume/src/main.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/resume.test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +54,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "ts.external.directory.path": "/home/dylan/Projects/dylan/resume/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -48,8 +68,8 @@
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" show_stripe_button="false" />
       <window_info id="Learn" show_stripe_button="false" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.32994792" />
-      <window_info active="true" id="Commit" order="1" visible="true" weight="0.32994792" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32994792" />
+      <window_info id="Commit" order="1" weight="0.32994792" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
@@ -59,8 +79,8 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.32994187" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.32994187" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.32994187" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.32994187" />
       <window_info anchor="bottom" id="Services" order="5" weight="0.32994187" />
       <window_info anchor="right" id="Detexify" show_stripe_button="false" />
       <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
@@ -73,6 +93,11 @@
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
     </layout>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager" selected="LaTeX.build">
     <configuration name="serve" type="docker-deploy" factoryName="docker-image" server-name="Docker">
@@ -124,7 +149,8 @@
       <option name="presentableId" value="Default" />
       <updated>1721684889161</updated>
       <workItem from="1721684890943" duration="4016000" />
-      <workItem from="1721760519299" duration="2636000" />
+      <workItem from="1721760519299" duration="4528000" />
+      <workItem from="1721853403898" duration="2649000" />
     </task>
     <task id="LOCAL-00001" summary="chore(create-project): create project in IntelliJ IDEA&#10;&#10;Add JetBrains related configuration to the repository.">
       <option name="closed" value="true" />
@@ -230,7 +256,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721765328212</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fix(cdk): update resume bucket stack export name&#10;&#10;Change export name to `ResumeBucketARN`.">
+      <option name="closed" value="true" />
+      <created>1721765500972</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1721765500972</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +286,8 @@
     <MESSAGE value="fix(cdk): update build artifact source&#10;&#10;Update the location of the build artifacts.  Because the &#10;`resume-stack.ts` file is in `lib/` we need to go up one level." />
     <MESSAGE value="fix(cdk): update resume bucket stack export name&#10;&#10;Change export name to `ResumeBucket`." />
     <MESSAGE value="chore(phpstorm): update workspace configuration&#10;&#10;Commit changes to workspace configuration." />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(phpstorm): update workspace configuration&#10;&#10;Commit changes to workspace configuration." />
+    <MESSAGE value="fix(cdk): update resume bucket stack export name&#10;&#10;Change export name to `ResumeBucketARN`." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(cdk): update resume bucket stack export name&#10;&#10;Change export name to `ResumeBucketARN`." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
