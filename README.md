@@ -1,14 +1,13 @@
-# Welcome to your CDK TypeScript project
+# Resume
 
-This is a blank project for CDK development with TypeScript.
+![Pipeline status badge](https://gitlab.dylanw.dev/dylan/resume/badges/main/pipeline.svg)
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+My professional resume, available at [https://resume.dylanw.dev](https://resume.dylanw.dev).
 
-## Useful commands
+### Building
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+This project is built using `pdflatex`, you can build it locally with the `texlive/texlive:latest` Docker image:
+
+```shell
+docker run --rm -v $(pwd)/src:/workdir -v $(pwd)/out:/out texlive/texlive:latest pdflatex -file-line-error -interaction=nonstopmode -synctex=1 -output-format=pdf -output-directory=/out main.tex
+```

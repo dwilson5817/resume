@@ -8,7 +8,7 @@ build:
     - cd src
     - pdflatex -file-line-error -interaction=nonstopmode -synctex=1 -output-format=pdf -output-dir=../ main.tex
   after_script:
-    - cat out/main.log
+    - cat main.log
   artifacts:
     paths:
       - main.pdf
