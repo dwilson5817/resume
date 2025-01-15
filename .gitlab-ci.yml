@@ -1,5 +1,6 @@
 stages:
   - build
+  - deploy
 
 build:
   image: texlive/texlive:latest
@@ -12,3 +13,7 @@ build:
   artifacts:
     paths:
       - main.pdf
+
+deploy:
+  trigger:
+    project: dylan/resume-website
