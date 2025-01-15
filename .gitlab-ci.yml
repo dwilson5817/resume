@@ -15,5 +15,6 @@ build:
       - main.pdf
 
 deploy:
+  stage: deploy
   trigger:
     project: dylan/resume-website
