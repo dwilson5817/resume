@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="60 60 260 260">
+  <defs>
+    <linearGradient id="icon_zcr7b8ai_grad" x1="60" y1="60" x2="320" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ff54b0" />
+      <stop offset="100%" stop-color="#8c1bab" />
+    </linearGradient>
+  </defs>
+  <rect x="60" y="60" width="260" height="260" rx="20" ry="20" fill="url(#icon_zcr7b8ai_grad)" />
+  <text x="85" y="190" font-size="110" font-family="Helvetica, Arial, sans-serif" font-weight="700" letter-spacing="0.01em" fill="#fff">CV</text>
+  <rect x="95" y="270" width="110" height="15" fill="#fff" />
+</svg>
