@@ -2,17 +2,10 @@ stages:
   - build
   - deploy
 
-build:
-  image: texlive/texlive:latest
-  stage: build
-  script:
-    - cd src
-    - pdflatex -file-line-error -interaction=nonstopmode -synctex=1 -output-format=pdf -output-dir=../ main.tex
-  after_script:
-    - cat main.log
-  artifacts:
-    paths:
-      - main.pdf
+include:
+  - component: $CI_SERVER_FQDN/infrastructure/latex-build-base/latex-build@1.0.0
+    inputs:
+      stage: build
 
 deploy:
   stage: deploy
