@@ -7,6 +7,10 @@ include:
     inputs:
       stage: build
 
+latex-build:
+  before_script:
+    - cd "${CI_PROJECT_DIR}/src"
+
 deploy:
   stage: deploy
   trigger:
