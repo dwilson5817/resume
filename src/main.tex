@@ -19,6 +19,7 @@
 \usepackage{stmaryrd}
 \usepackage{microtype}
 \usepackage{xcolor}
+\usepackage{needspace}
 
 \definecolor{accent}{HTML}{1F3864}
 \definecolor{metagray}{HTML}{595959}
@@ -29,7 +30,13 @@
 \setlist[itemize]{leftmargin=*,labelsep=2.5mm,noitemsep}
 \newcommand{\foo}{{\color{accent}\makebox[1pt]{\raisebox{0.5pt}{\large$\bullet$}}\hskip-1pt\vrule width 1pt}\hspace{\labelsep}}
 \newcommand{\meta}[1]{\textit{#1}}
-\newcommand{\projectheading}[3]{\textbf{#1}\hfill\meta{#3}\\\meta{#2}\par}
+\newcommand{\projectheading}[3]{\needspace{4\baselineskip}\textbf{#1}\hfill\meta{#3}\\\meta{#2}\par}
+\newcommand{\cvcompany}[2]{%
+    \needspace{6\baselineskip}%
+    \begin{tabularx}{\textwidth}{@{}Xr@{}}
+        \textbf{#1} & \meta{#2}
+    \end{tabularx}%
+    \vspace{-1.2em}}
 \newcommand{\cvsection}[1]{\par\medskip\hbox{\large\textbf{\textcolor{accent}{\textls[60]{\textsc{#1}}}}\strut}{\color{accent}\hrule height 1pt}\medskip}
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
 
