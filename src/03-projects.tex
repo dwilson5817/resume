@@ -4,7 +4,43 @@
 \par\hbox{\textbf{Personal Projects}\strut}{\hrule height 1pt}
 \medskip
 
-Interactive party app with fictional credit cards to purchase drinks with dynamic pricing based on market demand.
-User interface (website and display board shown on TVs) written in TypeScript using React.
-Backend API written as Lambda functions in Python using FastAPI\@.
-Message bus for pricing events written as Python Lambda function, using AWS SQS\@.
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{DMARC Report Dashboard} & \textit{2026}
+\end{tabularx}
+\begin{itemize}[topsep=2pt]
+    \item Event-driven AWS application that processes DMARC reports received by email
+    \item Scheduled Lambda function polls an inbox hourly, extracting report attachments and storing them in S3; a second Lambda triggered on S3 PUT events parses each report and writes results to DynamoDB
+    \item React (TypeScript) frontend provides a dashboard with graphs displaying DMARC pass/fail rates across domains over time
+\end{itemize}
+
+\medskip
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{Home Lab} & \textit{2015 to present}
+\end{tabularx}
+\begin{itemize}[topsep=2pt]
+    \item Maintain a home lab running on Proxmox, provisioned and managed via a collection of Ansible playbooks
+    \item Self-hosted services include a Minecraft server network, GitLab with CI/CD runners, a mail server, a web server, and a Bluesky PDS
+    \item Migrated infrastructure configuration from SaltStack to Ansible
+\end{itemize}
+
+\medskip
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{Free Market Fandango} & \textit{2022}
+\end{tabularx}
+\begin{itemize}[topsep=2pt]
+    \item Interactive party app where guests use fictional credit cards to purchase drinks at dynamically adjusted prices based on real-time market demand
+    \item React (TypeScript) frontend serving a guest-facing website and TV display boards
+    \item Backend API built as AWS Lambda functions in Python using FastAPI; pricing events driven by an AWS SQS message bus
+\end{itemize}
+
+\medskip
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{Credit Union Website} & \textit{2017}
+\end{tabularx}
+\begin{itemize}[topsep=2pt]
+    \item Built a website for a local credit union including a custom CMS enabling staff to manage page content without technical knowledge
+    \item Built with Laravel and Vue via Inertia.js, with a jQuery-powered loan repayment calculator
+\end{itemize}

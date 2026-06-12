@@ -13,17 +13,26 @@
     \renewcommand\arraystretch{1.4}
     \begin{tabularx}{\textwidth}{@{}r <{\hskip -3pt} !{\foo} >{}X@{}}
         \addlinespace[1.5ex]
-        & \textbf{Software Development Engineer I} \hfill \textit{Sep. 2023 to Present}
-        \parbox{\textwidth}{\textit{Amazon DynamoDB}}
+        & \textbf{Software Development Engineer II} \hfill \textit{Dec. 2025 to Present}
+        \parbox{\textwidth}{\textit{Amazon DynamoDB (Operational Intelligence)}}
         \begin{itemize}[topsep=5pt]
-            \item Develop, test and release the Amazon DynamoDB and Amazon Keyspaces Management Console
-            \item Participate in 24-hour on-call rotation to support the console and other internal operational tools by mitigating customer impacting events
-            \item Migrate the Keyspaces Management Console to a new infrastructure framework to improve resilience and reduce operational load
+            \item Implement heatmap and line graph visualisations in an internal operational console, driven by queries to an internal log analysis service
+            \item Add support for multi-key index GSIs in DynamoDB Local, aligning the local development tool with a new production DynamoDB feature
+            \item Migrate load balancers for an internal log analysis service from Citrix NetScaler to an AWS-native managed load balancing solution, reducing operational overhead
+        \end{itemize} \\
+        & \textbf{Software Development Engineer I} \hfill \textit{Sep. 2023 to Nov. 2025}
+        \parbox{\textwidth}{\textit{Amazon DynamoDB (Console then Operational Intelligence from Mar. 2025)}}
+        \begin{itemize}[topsep=5pt]
+            \item Implemented favourite tables feature enabling customers to bookmark tables for quick access from the console dashboard and tables list
+            \item Led migration of the Keyspaces Management Console from a legacy self-hosted framework to an AWS-native managed infrastructure, including upgrading the AWS SDK for JavaScript from v2 to v3 and creating a proof-of-concept to enable customers to connect to Amazon Keyspaces via AWS CloudShell
+            \item Participated in 24-hour on-call rotation to support the console and other internal operational tools by mitigating customer-impacting events
+            \item Migrated team infrastructure-as-code (IaC) tooling from a deprecated YAML-based configuration framework to a standard Ruby-based IaC tool
+            \item Took on secondary on-call ownership for the DynamoDB console, expanding coverage across two rotations
         \end{itemize} \\
         & \textbf{Intern Software Development Engineer} \hfill \textit{Jun. 2022 to Sep. 2022}
-        \parbox{\textwidth}{\textit{Amazon DynamoDB}}
+        \parbox{\textwidth}{\textit{Amazon DynamoDB (Console)}}
         \begin{itemize}[topsep=5pt]
-            \item Develop an API to be used by the console to store customer preferences to unblock some of the most highly requested features including saved queries, favourite tables and saved explore items filters
+            \item Developed an API used by the console to store customer preferences, unblocking highly requested features including saved queries, favourite tables and saved Explore Items filters
         \end{itemize} \\
     \end{tabularx}
 \end{table}
@@ -40,9 +49,9 @@
         & \textbf{Intern Software Engineer} \hfill \textit{Jun. 2020 to Sep. 2021}
         \parbox{\textwidth}{\textit{Threat Manager}}
         \begin{itemize}[topsep=5pt]
-            \item Convert existing manually configured CI/CD environment to infrastructure-as-code (IaC) using SaltStack for Threat Manager and Security Policy Manager teams
-            \item Autonomously deploy Jenkins server and agents with complete configuration and plugins
-            \item Enable scaling up or down of Windows and Linux agents to support increases and decreases in need of build capacity
+            \item Converted a manually configured CI/CD environment to IaC using SaltStack for the Threat Manager and Security Policy Manager teams
+            \item Automated deployment of Jenkins server and agents, including full configuration and plugins
+            \item Enabled elastic scaling of Windows and Linux build agents to match demand
         \end{itemize} \\
     \end{tabularx}
 \end{table}
