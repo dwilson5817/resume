@@ -3,7 +3,7 @@
 
 \cvsection{Personal Projects}
 
-\projectheading{DMARC Report Dashboard}{TypeScript, AWS Lambda}{2026}
+\projectheading{DMARC Report Dashboard}{TypeScript, Python, AWS Lambda, AWS CDK}{2026}
 \begin{itemize}[topsep=2pt]
     \item Event-driven AWS application that processes DMARC reports received by email
     \item Scheduled Lambda function polls an inbox hourly, extracting report attachments and storing them in S3; a second Lambda triggered on S3 PUT events parses each report and writes results to DynamoDB
@@ -17,7 +17,7 @@
     \item Migrated infrastructure configuration from SaltStack to Ansible
 \end{itemize}
 
-\projectheading{Free Market Fandango}{Python, React}{2022}
+\projectheading{Free Market Fandango}{Python, React, AWS CDK}{2022}
 \begin{itemize}[topsep=2pt]
     \item Interactive party app where guests use fictional credit cards to purchase drinks at dynamically adjusted prices based on real-time market demand
     \item React (TypeScript) frontend serving a guest-facing website and TV display boards
