@@ -7,7 +7,9 @@
 % Packages
 \usepackage[a4paper, margin=1cm]{geometry}
 \usepackage[parfill]{parskip}
-\usepackage{paratype}
+\usepackage[default]{sourcesanspro}
+%\usepackage[sfdefault]{FiraSans}   % alternative: curled lowercase l, but odd italics
+%\usepackage{paratype}              % original: PT Sans
 \usepackage{enumitem}
 \usepackage{tabularx}
 \usepackage{array, booktabs}
@@ -15,11 +17,20 @@
 \usepackage{multirow}
 \usepackage{amssymb}
 \usepackage{stmaryrd}
+\usepackage{microtype}
+\usepackage{xcolor}
+
+\definecolor{accent}{HTML}{1F3864}
+\definecolor{metagray}{HTML}{595959}
+\usepackage[hidelinks]{hyperref}
 
 \renewcommand{\familydefault}{\sfdefault}
 
 \setlist[itemize]{leftmargin=*,labelsep=2.5mm,noitemsep}
-\newcommand{\foo}{\makebox[1pt]{\raisebox{0.5pt}{\large$\bullet$}}\hskip-1pt\vrule width 1pt\hspace{\labelsep}}
+\newcommand{\foo}{{\color{accent}\makebox[1pt]{\raisebox{0.5pt}{\large$\bullet$}}\hskip-1pt\vrule width 1pt}\hspace{\labelsep}}
+\newcommand{\meta}[1]{\textit{#1}}
+\newcommand{\projectheading}[3]{\textbf{#1}\hfill\meta{#3}\\\meta{#2}\par}
+\newcommand{\cvsection}[1]{\par\medskip\hbox{\large\textbf{\textcolor{accent}{\textls[60]{\textsc{#1}}}}\strut}{\color{accent}\hrule height 1pt}\medskip}
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
 
 \pagenumbering{gobble}
@@ -28,8 +39,8 @@
 \begin{document}
 
     \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} @{}lcr@{} }
-        Dublin, Ireland & \multirow{2}{*}{\Huge\textbf{Dylan Wilson}} & mail@dylanwilson.dev \\
-        (+44) 7484 815817 & & gitlab.dylanw.dev
+        Dublin, Ireland & \multirow{2}{*}{\Huge\textbf{\textcolor{accent}{\textls[40]{Dylan Wilson}}}} & \href{mailto:mail@dylanwilson.dev}{mail@dylanwilson.dev} \\
+        (+44) 7484 815817 & & \href{https://gitlab.dylanw.dev}{gitlab.dylanw.dev}
     \end{tabular*}
 
     \bigskip
@@ -41,7 +52,7 @@
     \input{02-education}
 
     \bigskip
-
+    
     \input{03-projects}
 
     \bigskip

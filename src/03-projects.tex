@@ -1,45 +1,30 @@
 %! Author = dylan
 %! Date = 21/07/2024
 
-\par\hbox{\textbf{Personal Projects}\strut}{\hrule height 1pt}
-\medskip
+\cvsection{Personal Projects}
 
-\begin{tabularx}{\textwidth}{@{}Xr@{}}
-    \textbf{DMARC Report Dashboard} & \textit{2026}
-\end{tabularx}
+\projectheading{DMARC Report Dashboard}{TypeScript, AWS Lambda}{2026}
 \begin{itemize}[topsep=2pt]
     \item Event-driven AWS application that processes DMARC reports received by email
     \item Scheduled Lambda function polls an inbox hourly, extracting report attachments and storing them in S3; a second Lambda triggered on S3 PUT events parses each report and writes results to DynamoDB
     \item React (TypeScript) frontend provides a dashboard with graphs displaying DMARC pass/fail rates across domains over time
 \end{itemize}
 
-\medskip
-
-\begin{tabularx}{\textwidth}{@{}Xr@{}}
-    \textbf{Home Lab} & \textit{2015 to present}
-\end{tabularx}
+\projectheading{Home Lab}{Proxmox, Ansible}{2015 to present}
 \begin{itemize}[topsep=2pt]
     \item Maintain a home lab running on Proxmox, provisioned and managed via a collection of Ansible playbooks
     \item Self-hosted services include a Minecraft server network, GitLab with CI/CD runners, a mail server, a web server, and a Bluesky PDS
     \item Migrated infrastructure configuration from SaltStack to Ansible
 \end{itemize}
 
-\medskip
-
-\begin{tabularx}{\textwidth}{@{}Xr@{}}
-    \textbf{Free Market Fandango} & \textit{2022}
-\end{tabularx}
+\projectheading{Free Market Fandango}{Python, React}{2022}
 \begin{itemize}[topsep=2pt]
     \item Interactive party app where guests use fictional credit cards to purchase drinks at dynamically adjusted prices based on real-time market demand
     \item React (TypeScript) frontend serving a guest-facing website and TV display boards
     \item Backend API built as AWS Lambda functions in Python using FastAPI; pricing events driven by an AWS SQS message bus
 \end{itemize}
 
-\medskip
-
-\begin{tabularx}{\textwidth}{@{}Xr@{}}
-    \textbf{Credit Union Website} & \textit{2017}
-\end{tabularx}
+\projectheading{Credit Union Website}{Laravel, Vue}{2017}
 \begin{itemize}[topsep=2pt]
     \item Built a website for a local credit union including a custom CMS enabling staff to manage page content without technical knowledge
     \item Built with Laravel and Vue via Inertia.js, with a jQuery-powered loan repayment calculator
